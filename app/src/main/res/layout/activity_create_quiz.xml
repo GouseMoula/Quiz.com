@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    tools:context="com.quizcom.CreateQuizActivity">
+
+    <TextView
+        android:id="@+id/tv_q_number_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_q_number_create"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q : "
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <com.quizcom.views.CustomEditText
+            android:id="@+id/et_create_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_question_here"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorAccent"
+            android:maxLength="40"
+            android:textColorHint="@color/colorAccentHint" />
+        <!--android:background="@android:color/transparent"-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_question"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_option"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/options_container"
+        android:background="@drawable/btn_shape1"
+        android:gravity="center"
+        android:text="@string/add_option"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_add_option"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A : "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_create_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_correct_option"
+            android:inputType="number"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+
+            android:textColorHint="@color/colorPrimaryHint" />
+        <!--android:background="@android:color/transparent"-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_btn_submit_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_shape2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+</RelativeLayout>

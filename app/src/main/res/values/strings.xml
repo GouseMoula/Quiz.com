@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiz.com</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="quiz_com">Quiz.com</string>
+    <string name="attempt_quiz">Attempt Quiz</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="next_question">Next Question</string>
+    <string name="enter_question_here">Enter Question here</string>
+    <string name="enter_correct_answer_here">Enter correct answer here</string>
+    <string name="add_option">Add option</string>
+    <string name="enter_option_here">Enter option here</string>
+    <string name="enter_correct_option">Correct option from (1,4)</string>
+    <string name="create_quiz_title">Create Quiz</string>
+</resources>

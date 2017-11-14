@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.quizcom.AttemptQuizActivity">
+
+    <TextView
+        android:id="@+id/tv_q_attempt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q : "
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:text="Options" />
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_btn_nextQ"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_shape1"
+        android:gravity="center"
+        android:text="@string/next_question"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
